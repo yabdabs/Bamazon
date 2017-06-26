@@ -7,15 +7,23 @@ Bamazon Customer View
 The Customer view allows the user to view the the products, as well as thier details. The is then asked to search based on a product/item ID. Lastly, they are asked to enter in how much of that product they want to buy. If the item is in the stock, the purchase will go through, the database will be updated and the user will see the cost of the purchase. 
 
 User view of Items
+
+
 ![Customer View](/table2.PNG)
 
 Entering the ID for desired Item
+
+
 ![Customer View](/EnteringID.PNG)
 
 Entering Unit for desired Item
+
+
 ![Customer View](/EnteringUnits.PNG)
 
 Transaction completed successfull, Database Updated, Total price Shown
+
+
 ![Customer View](/completedTrans.PNG)
 
 To-Dos (Customer View)
