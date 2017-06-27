@@ -9,31 +9,71 @@ The Customer view allows the user to view the the products, as well as thier det
 User view of Items
 
 
-![Customer View](/table2.PNG)
+![Customer View](/images/customerViewImages/table2.PNG)
 
 Entering the ID for desired Item
 
 
-![Customer View](/EnteringID.PNG)
+![Customer View](/images/customerViewImages/EnteringID.PNG)
 
 Entering Unit for desired Item
 
 
-![Customer View](/EnteringUnits.PNG)
+![Customer View](/images/customerViewImages/EnteringUnits.PNG)
 
 Transaction completed successfull, Database Updated, Total price Shown
 
 
-![Customer View](/completedTrans.PNG)
+![Customer View](/images/customerViewImages/completedTrans.PNG)
 
-To-Dos (Customer View)
--fix bugs in customer view. End the connection instead of trying to continously having the user buy items.
--include a table in the customer view and clean up output
 
--clean folder structure
 
+Bamazon Manager View
+
+The Bamazon Manager view allows the user to select from a list of menu options:
+-View Products for sale
+-View Low Inventory
+-Add to Inventory
+-Add New Product
+
+-If a manager selects View Products for Sale, the app should list every available item: the item IDs, names, prices, and quantities.
+
+-If a manager selects View Low Inventory, then it should list all items with an inventory count lower than five.
+
+-If a manager selects Add to Inventory, your app should display a prompt that will let the manager "add more" of any item currently in the store.
+
+-If a manager selects Add New Product, it should allow the manager to add a completely new product to the store.
+***THIS HAS NOT BEEN IMPLEMENTED YET***
+
+
+View Products for sale
+
+
+![Manager View](/images/managerViewImages/firstOption.PNG)
+
+
+-View Low Inventory
+
+
+![Manager View](/images/managerViewImages/option2.PNG)
+
+
+-Add New Product
+
+
+![Manager View](/images/managerViewImages/option3.PNG)
+
+
+
+
+----------------
+To-Dos 
+----------------
 -write markdown file
 
--Implement Manager View
+Manager View To-Dos'
+-Finish add product option
+- add item amount when selecting add Item option(Currently updates the item amount selected)
 
+Supervisor View To-Do
 -Implement Supervisor View
