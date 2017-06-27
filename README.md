@@ -1,8 +1,11 @@
 # Bamazon
 The app will take in orders from customers and deplete stock from the store's inventory. As a bonus task, you can program your app to track product sales across your store's departments and then provide a summary of the highest-grossing departments in the store.
 
+----------------------------------
 
 Bamazon Customer View
+
+----------------------------------
 
 The Customer view allows the user to view the the products, as well as thier details. The is then asked to search based on a product/item ID. Lastly, they are asked to enter in how much of that product they want to buy. If the item is in the stock, the purchase will go through, the database will be updated and the user will see the cost of the purchase. 
 
@@ -27,8 +30,11 @@ Transaction completed successfull, Database Updated, Total price Shown
 ![Customer View](/images/customerViewImages/completedTrans.PNG)
 
 
+----------------------------------
 
 Bamazon Manager View
+
+----------------------------------
 
 The Bamazon Manager view allows the user to select from a list of menu options:
 - View Products for sale
