@@ -70,6 +70,7 @@ View Products for sale
 To-Dos 
 ----------------
 -write markdown file
+-make output more readable and cleaner with color npm
 
 Manager View To-Dos'
 -Finish add product option
