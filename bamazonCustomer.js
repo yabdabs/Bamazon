@@ -6,7 +6,7 @@ var ID;
 var connection = mysql.createConnection({
 	host: "localhost",
 	port: 3306,
-	user: "root",
+	user: "root", 	
 	password: "",
 	database: "Bamazon"
 });
@@ -32,7 +32,7 @@ var connection = mysql.createConnection({
 				}
 				console.log(view);
 
-				askId(res);
+				askId(res);	
 			
 		});
 	});
@@ -54,14 +54,14 @@ function askId(res){
 		}
 		else{
 			console.log("that's a number");
-			ID=res[answers.productID -1];
+			ID = res[answers.productID -1];
 			console.log(ID);
-			askUnits(ID);	
+			askUnits(ID, res);	
 		}
 	});
 }
 
-function askUnits(product){
+function askUnits(product, res){
 	inquirer.prompt([
 	{
 		name:"numUnits",
@@ -71,7 +71,7 @@ function askUnits(product){
 	]).then(function(answers2){
 		if(isNaN(answers2.numUnits)){
 			console.log("That's not a number");
-			askUnits(product);
+			askUnits(product, res);
 		}
 		else{
 			console.log("that's a number");
@@ -84,7 +84,7 @@ function askUnits(product){
 			}
 			else{
 				console.log("Insufficient quantity!");	
-				askId();
+				askId(res);
 			}
 
 		}
@@ -106,8 +106,12 @@ function updateDatabase(amount, productId, answers2, product){
 			console.log("stock successfully updated");
 			console.log("total cost of you're purchase: $" + answers2.numUnits * product.price);
 
+			connection.end();
+
 
 		}
 	);
 }
 
+
+//fixed for undefined productID;

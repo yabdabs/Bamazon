@@ -16,4 +16,6 @@ CREATE TABLE Products(
 INSERT INTO Products(product_name, department_name, price, stock_quantity)
 VALUES ("blender", "kitchen", 60, 15), ("Matcha Green Tea", "Food", 12, 46), ("Multi Vitamin", "Supplements", 40, 24),
 ("Lenovo Laptop", "Laptops", 999, 7), ("HP Laptop", "Laptops", 680, 15), ("Whey Protien", "Food", 55, 20),
-("Almonds", "Food", 14, 22), ("blender", "kitchen", 60, 15), ("blender", "kitchen", 60, 15), ("cologne", "beauty", 88, 5);
+("Almonds", "Food", 14, 22), ("Coffee Maker", "kitchen", 60, 15), ("Microwave", "kitchen", 60, 15), ("cologne", "beauty", 88, 5);
+
+SELECT product_name FROM Products;
